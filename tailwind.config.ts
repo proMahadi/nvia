@@ -17,9 +17,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        container: '1416px', // according to figma
+      },
       colors: {
         project:{
-          primary:"#2964EC"
+          primary:"#2964EC",
+          darkBg:"#0E162A",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -54,11 +58,6 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-      },
-      borderRadius: {
-        lg: `var(--radius)`,
-        md: `calc(var(--radius) - 2px)`,
-        sm: "calc(var(--radius) - 4px)",
       },
     },
   },
